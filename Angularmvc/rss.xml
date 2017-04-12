@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  
+    <channel>
+      <title>MakeUseOf RSS Feed</title>
+      <link>http://localhost:54994</link>
+      <description>MP Muzaffarpur</description>
+    </channel>
+    <item>
+      <title>Entry Title</title>
+      <link>Link to the entry</link>
+      <guid>http://localhost:54994/Account/Display</guid>
+      <pubDate>Sat, 9 Jan 2010 16:23:41 GMT</pubDate>
+      <description>Politics</description>
+    </item>
+  </rss>

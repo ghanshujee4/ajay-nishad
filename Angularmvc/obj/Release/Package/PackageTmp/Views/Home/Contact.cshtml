@@ -1,0 +1,87 @@
+﻿@model ContactUS.ViewModel.ContactViewModel
+@{
+    ViewData["Title"] = "Contact Page";
+}
+<div class="container">
+    <h2 class="title2">Contact Us</h2>
+    <hr />
+    <div class="col-md-12" style="">
+        <div class="col-sm-12">
+            <p class="view-field">    <span class="view-label" style="font-weight:bold">Permanent Address: </span>    <span class="view-output" >"Nishad Bhavan",  Kachhi Pakki Chowk,Muzaffarpur, BiharTel: (0621) 2273045, 09013869973 (M)</span>  </p>
+            <p class="view-field">    <span class="view-label" style="font-weight:bold">Present Address: </span>    197, North Avenue,New Delhi-110001(011) 23094115, 09013869973 (M)  Fax: (011) 23094125  </p>
+
+        </div>
+        <hr />
+        <div class="col-sm-12">
+            @*@if (ViewBag.Message == null)
+            {*@
+                <div>
+                    <form method="post">
+                        <div class="form-group">
+                            @Html.LabelFor(Model => Model.Name)
+                            @Html.TextBoxFor(Model => Model.Name)
+                           
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(Model => Model.Email)
+                            @Html.TextBoxFor(Model => Model.Email)
+                            @*<label asp-for="Email">Email</label>
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email"
+                                      class="text-muted"></span>*@
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(Model => Model.Subject)
+                            @Html.TextBoxFor(Model => Model.Subject)
+                            @*<label asp-for="Subject">Subject</label>
+                                    <input asp-for="Subject" class="form-control" />
+                                <span asp-validation-for="Subject"
+                                      class="text-muted"></span>*@
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(Model => Model.Message)
+                            @Html.TextAreaFor(Model => Model.Message)
+                            @*<label asp-for="Message">Message</label>
+                                    <textarea rows="5" cols="15"
+                                              asp-for="Message" class="form-control"></textarea>
+                                <span asp-validation-for="Message"
+                                      class="text-muted"></span>*@
+                        </div>
+                        <div>
+                            <button type="submit"
+                                    class="btn btn-success">
+                                Send
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            @*}*@
+        </div>
+
+        <div>
+            <div>
+                @if (ViewBag.Message != null)
+                {
+                    <div>@ViewBag.Message</div>
+
+
+                }
+            </div>
+        </div>
+    </div>
+
+</div>
+<style>
+    .navbar-wrapper {
+    display:none;
+    }
+    input, select, textarea {
+        max-width: 100%;
+        width: 50%;
+        border-radius: 3px;
+    }
+    label {
+        min-width: 10%;
+    }
+</style>

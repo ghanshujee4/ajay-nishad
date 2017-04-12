@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Angularmvc.Models.tblA>
+@{
+    ViewBag.Title = "News";
+}
+
+<div class="container">
+    <h2 class="title2">News</h2>
+    <hr />
+    @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+
+    @using (Html.BeginForm())
+    {
+        <div class="container">
+
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="row">
+                        <div>
+                            <div class="col-sm-12 h2">
+                                @Html.DisplayFor(modelItem => item.fname)
+                            </div>
+                            <hr />
+                            <div class="col-sm-3 thumbnail" style="margin-left:15px"><img id="NewsImg" src="~/images/@item.imageUrl" style="max-height:350px; max-width:350px" class="img-responsive" /></div>
+                            <div class="col-sm-8">
+                                <span>@Html.DisplayFor(ModelItem => item.Datetime) </span>
+                                <p>
+                                    @Html.DisplayFor(modelItem => item.lname)
+                                </p><br />
+                                <button class="btn btn-primary pull-left">
+                                    @Html.ActionLink("Details", "NewsDetails", new { id = item.Id })
+                                </button>
+                                <div class="display-field col-sm-6 ">
+                                    <div class="pull-right " style="padding:10px 20px 10px 10px">
+                                        <a href="#" class="fa fa-facebook fa-2x" style="padding:10px"></a>
+                                        <a class="fa fa-twitter fa-2x" style="padding:10px"></a>
+                                        <a class="fa fa-google fa-2x" style="padding:10px"></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <hr />
+                }
+            </div>
+            <div style="margin:auto">
+                <ul class="pagination">
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+            </div>
+        </div>
+    }
+</div>
+<style>
+    button a {
+        color: #fff;
+    }
+</style>

@@ -1,0 +1,34 @@
+﻿@model Angularmvc.Models.tblA
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+
+
+<div class="col-sm-12">
+    <div class="display-field col-sm-12 h2" style="padding-bottom:10px;">
+        @Html.DisplayFor(model => model.fname)
+    </div>
+    
+  
+        <img class="thumbnail" src="@Url.Content(String.Format("~/Images/{0}",Model.imageUrl))">
+   
+    <div class="display-field col-sm-9 ">
+        @Html.DisplayFor(model => model.Datetime)
+    </div>
+    <div class="display-field col-sm-9 ">
+        @Html.DisplayFor(model => model.lname)
+    </div>
+    <div class="display-field col-sm-9 ">
+        <div class="pull-right " style="padding:10px 20px 10px 10px">
+           <a href="#" class="fa fa-facebook fa-2x"  style="padding:10px"></a>
+            <a class="fa fa-twitter fa-2x" style="padding:10px"></a>
+            <a class="fa fa-google fa-2x" style="padding:10px"></a>
+        </div>
+        
+    </div>
+
+</div>
+

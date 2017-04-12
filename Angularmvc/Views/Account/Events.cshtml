@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Angularmvc.Models.tblA>
+@{
+    ViewBag.Title = "Display";
+}
+
+@*<h2>Display</h2>*@
+@*@Html.DisplayNameFor(model => model.fname)*@
+
+@using (Html.BeginForm())
+{
+    <div class="container">
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                @*<div class="row">*@
+                    <div class="col-sm-4  text-center" style="padding:10px; margin-bottom:10px">
+                        
+                        @*<br />
+            <br />*@
+                        <div class="img-responsive thumbnail" style="margin-left:15px"><img src="~/images/@item.imageUrl" class="img-responsive" style="max-height:300px" /></div>
+                        <div class="col-sm-8 hidden">
+                            <span>@Html.DisplayFor(ModelItem => item.Datetime) </span>
+                            <p>
+                                @Html.DisplayFor(modelItem => item.lname)
+                            </p><br />
+                            <button class="btn btn-primary" href="#"> > See More</button>
+                        </div>
+                        <div class="caption h2">
+                     
+                            @Html.DisplayFor(modelItem => item.fname)
+                        </div>
+                       
+                    </div>                  
+            }
+        </div>
+    </div>
+}
+<style>
+   
+</style>
+
+

@@ -1,0 +1,52 @@
+﻿@model Angularmvc.Models.tblA
+
+@{
+    ViewBag.Title = "tblAView";
+}
+<div class="container">
+    <h2>Update News</h2>
+
+    @using (Html.BeginForm("FileUpload", "Account", FormMethod.Post,
+                    new { enctype = "multipart/form-data" }))
+    {
+        <div>
+            <br />
+            <br />
+            <h3>
+                News Heading :
+            </h3><br />
+            @Html.TextBox("fname") <br /><br />
+            @Html.ValidationMessageFor(m => m.fname)
+
+            <h3>
+                News Content :
+            </h3><br />
+            @Html.TextArea("lname", new { Required = "Required" }) <br /><br />
+
+
+            <h3> News Image</h3><br />
+            <input type="file" name="file" id="file" style="width: 100%;" /> <br />
+
+
+
+            <input type="datetime" value="Datetime" id="Datetime" /> @*@Html.Label("Datetime", new { id = "date" })<br />*@
+
+            <input type="submit" value="Upload" class="submit" />
+        </div>
+    }
+</div>
+<style>
+    input, select, textarea {
+        max-width: 90%;
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+    }
+
+    textarea {
+        min-height: 104px;
+    }
+</style>
+<script>
+    document.getElementById('Datetime').value = Date();
+</script>

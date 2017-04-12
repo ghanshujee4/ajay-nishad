@@ -1,0 +1,208 @@
+﻿@model Angularmvc.Models.RegisterViewModel
+
+@{
+    ViewBag.Title = "RegisterView";
+}
+
+
+
+<div ng-app="myApp" ng-controller="HomeCtrl" class="container">
+
+
+    <div class="row">
+        <div class="bs-example marginTop50" data-example-id="table-within-panel">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Code Handbook</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        AngularJS ASP.NET MVC Editable Grid Demo
+                    </p>
+                </div>
+                <table class="table table-striped" at-table at-paginated at-list="list" at-config="config">
+                    <thead>
+                        <tr>
+                            <th>
+                                #
+                            </th>
+                            <th>
+                                First Name
+                            </th>
+                            <th>
+                                Last Name
+                            </th>
+                            <th>
+                                Country
+                            </th>
+                            <th>
+
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="emp in employees | filter: emp">
+
+
+                            <th scope="row">
+                                {{$index+1}}
+                            </th>
+                            <td>
+                                <span ng-show="emp.showEdit" id="FirstNameunique">{{emp.FirstName}}</span>
+                                <input ng-show="!emp.showEdit" type="text" ng-model="emp.FirstName" class="form-control" @*data-wc-unique="{key:emp.id, property:'FirstName' }"*@>
+                            </td>
+                            <td>
+                                <span ng-show="emp.showEdit"> {{emp.LastName}}</span>
+                                <input ng-show="!emp.showEdit" type="text" ng-model="emp.LastName" class="form-control">
+                            </td>
+                            <td>
+                                <span ng-show="emp.showEdit"> {{emp.Country}}</span>
+                                <input ng-show="!emp.showEdit" type="text" ng-model="emp.Country" class="form-control">
+                            </td>
+                            <td>
+                            <td>
+                                <span ng-click="toggleEdit(emp)" class="glyphicon glyphicon-pencil"></span>
+                                <span ng-click="toggleSave(emp)" class="glyphicon glyphicon-ok"></span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+                <at-pagination at-list="list" at-config="config"></at-pagination>
+            </div>
+        </div>
+    </div>
+    <script>
+        debugger;
+        function Chekunique() {
+            debugger;
+            var name = $("#uniqevalinput").val();
+            if ($("#FirstNameunique").text().toLowerCase() == $("#uniqevalinput").val().toLowerCase()) {
+                alert(name + " Aready Exist");
+                $("#uniqevalinput").val('');
+
+            }
+            else {
+
+            }
+        }
+    </script>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label class="col-md-2 control-label">First Name</label>
+            <div class="col-md-4">
+                Select a file: <input type="file" name="Filedata" />
+            </div>
+        </div>
+
+        @*<input type="submit" value="Upload" />*@
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">First Name</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="name"
+                       ng-model="emp.FirstName" onblur="Chekunique();" id="uniqevalinput" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Last Name</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="employees"
+                       ng-model="emp.LastName" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label"> Country</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="dob"
+                       ng-model="emp.Country" />
+
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-sm-2"></div>
+            <div class="col-md-4">
+                <input type="submit" value="Submit" class="btn btn-primary" ng-click="toggleSave(emp)" />
+            </div>
+        </div>
+    </form>
+
+</div>
+
+
+
+@*<div ng-controller="RegisterController">
+    <h4>RegisterViewModel</h4>
+    @*<hr />
+        <div ng-repeat="emp in employees">
+            {{employees.Username}}<br />
+            {{register.Password}}
+            {{register.ConfirmPassword}}
+
+        </div>*@
+
+
+
+
+
+
+
+
+@*<dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.UserName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.UserName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Password)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Password)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ConfirmPassword)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ConfirmPassword)
+                </dd>
+
+            </dl>
+
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+        <table>
+            <tbody>
+                <tr ng-repeat="emp in employees">
+                    <th scope="row">
+                        {{$index+1}}
+                    </th>
+                    <td>
+                        {{emp.UserName}}
+                    </td>
+                    <td>
+                        {{emp.Password}}
+                    </td>
+                    <td>
+                        {{emp.ConfirmPassword}}
+                    </td>
+                    <td>
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>*@
