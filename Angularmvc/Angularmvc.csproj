@@ -301,6 +301,7 @@
     <Content Include="Views\Shared\_footer.cshtml" />
     <Content Include="Views\Shared\_Slider.cshtml" />
     <Content Include="Views\Home\Yojana.cshtml" />
+    <Content Include="Views\Account\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

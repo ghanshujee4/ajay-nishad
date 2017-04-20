@@ -54,6 +54,8 @@ namespace Angularmvc.Controllers
         [HttpPost]
         public ActionResult Contact(ContactViewModel vm)
         {
+            //ApplicationDbContext db = new ApplicationDbContext();
+
             if(ModelState.IsValid)
             {
                 try
@@ -61,7 +63,7 @@ namespace Angularmvc.Controllers
                     MailMessage msz = new MailMessage();
                     msz.From = new MailAddress(vm.Email);//Email which you are getting 
 								//from contact us page 
-                    msz.To.Add("emailaddrss@gmail.com");//Where mail will be sent 
+                    msz.To.Add("ghanshujee4@gmail.com");//Where mail will be sent 
                     msz.Subject = vm.Subject;
                     msz.Body = vm.Message;
                     SmtpClient smtp = new SmtpClient();
@@ -71,7 +73,7 @@ namespace Angularmvc.Controllers
                     smtp.Port = 587;
 
                     smtp.Credentials = new System.Net.NetworkCredential
-					("ghanshyam.jha@itcinfotech.com", "password");
+					("mail.ajaynishad.in", "ajay123@");
 
                     smtp.EnableSsl = true;
 
@@ -83,7 +85,7 @@ namespace Angularmvc.Controllers
                 catch(Exception ex )
                 {
                     ModelState.Clear();
-                    ViewBag.Message = " Sorry we are facing Problem here {ex.Message}";
+                    ViewBag.Message = " Sorry we are facing Problem here" + ex.Message;
                 }              
             }
           

@@ -30,6 +30,12 @@
                                 <button class="btn btn-primary pull-left">
                                     @Html.ActionLink("Details", "NewsDetails", new { id = item.Id })
                                 </button>
+                                <button class="btn btn-primary pull-left">
+                                    @Html.ActionLink("Edit", "Delete", new { id = item.Id }) |
+                                </button>
+                                <button class="btn btn-primary pull-left">
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                </button>
                                 <div class="display-field col-sm-6 ">
                                     <div class="pull-right " style="padding:10px 20px 10px 10px">
                                         <a href="#" class="fa fa-facebook fa-2x" style="padding:10px"></a>

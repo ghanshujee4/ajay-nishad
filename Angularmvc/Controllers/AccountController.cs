@@ -504,7 +504,7 @@ namespace Angularmvc.Controllers
                 newRecord.fname = Request.Form["fname"];
                 newRecord.lname = Request.Form["lname"];
                 //newRecord.Datetime = Request.Form["Datetime"] ;
-               // DateTime n = DateTime.Now;
+                // DateTime n = DateTime.Now;
                 newRecord.Datetime = DateTime.Now;
                 newRecord.imageUrl = ImageName;
                 db.tblAs.Add(newRecord);
@@ -514,13 +514,13 @@ namespace Angularmvc.Controllers
             //Display records
             return RedirectToAction("../account/Display/");
         }
-        
+
         //[HttpGet]
         ApplicationDbContext db = new ApplicationDbContext();
         [AllowAnonymous]
         public ActionResult Display()
         {
-           
+
 
 
             //var fileview = db.tblAs.ToString();
@@ -548,6 +548,25 @@ namespace Angularmvc.Controllers
             }
             return View(UserByid);
 
+        }
+        public ActionResult Delete(int id = 0)
+        {
+            tblA UserByid = db.tblAs.Find(id);
+            if (UserByid == null)
+            {
+                return HttpNotFound();
+            }
+            return View(UserByid);
+        }
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            ApplicationDbContext db = new ApplicationDbContext();
+            tblA UserByid = db.tblAs.Find(id);
+            db.tblAs.Remove(UserByid);
+            db.SaveChanges();
+            return RedirectToAction("display");
         }
 
     }

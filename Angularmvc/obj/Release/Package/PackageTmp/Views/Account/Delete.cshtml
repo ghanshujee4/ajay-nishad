@@ -1,27 +1,36 @@
 ﻿@model Angularmvc.Models.tblA
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Delete";
 }
-
-
 <div class="container">
-
-
+    <h2>Delete</h2>
     <div class="col-sm-12">
         <div class="display-field col-sm-12 h2" style="padding-bottom:10px;">
             @Html.DisplayFor(model => model.fname)
         </div>
 
 
-        <img class="thumbnail" src="@Url.Content(String.Format("~/Images/{0}",Model.imageUrl))">
+        <img class="thumbnail col-sm-12" src="@Url.Content(String.Format("~/Images/{0}",Model.imageUrl))">
 
-        <div class="display-field col-sm-9 ">
+        <div class="display-field col-sm-12 bottom-blue-row ">
             @Html.DisplayFor(model => model.Datetime)
         </div>
-        <div class="display-field col-sm-9 ">
+        <hr />
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="btn btn-primary">
+                <input type="submit" value="Delete" class="btn btn-primary" />
+
+            </div>
+            @Html.ActionLink("Back to List", "Display")
+        }
+        <hr />
+        <div class="display-field col-sm-12 ">
             @Html.DisplayFor(model => model.lname)
         </div>
-        <div class="display-field col-sm-9 ">
+        <div class="display-field col-sm-12 ">
             <div class="pull-right " style="padding:10px 20px 10px 10px">
                 <a href="#" class="fa fa-facebook fa-2x" style="padding:10px"></a>
                 <a class="fa fa-twitter fa-2x" style="padding:10px"></a>
@@ -31,4 +40,8 @@
         </div>
 
     </div>
+    <br />
+    <br />
+   
+
 </div>

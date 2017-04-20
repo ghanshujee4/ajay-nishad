@@ -150,9 +150,9 @@ h1 a {
         color: #3498db !important;
     }
 
-        .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:active, .navbar-inverse .navbar-nav > li > a:link {
+    /*.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:active, .navbar-inverse .navbar-nav > li > a:link {
             color: #fff !important;
-        }
+        }*/
 
     .nav > li {
         position: relative;
@@ -491,17 +491,30 @@ div#google_translate_element {
 }
 
 #fb_plugin_element {
-       position: fixed;
+    position: absolute;
     top: 80px;
     left: -200px;
     z-index: 9999;
-    height: 350px;
+    /*height: 350px;*/
     width: 220px;
     background: #fff;
     box-shadow: 2px 2px;
-    padding:5px;
-    border-radius:3px;
+    padding: 5px;
+    border-radius: 3px;
 }
-.skiptranslate {
-display:none;
+
+
+
+
+@media only screen and (min-width:990px) {
+    .navbar-inverse .navbar-nav > li > a {
+        color: #fff !important;
+        border-radius: 3px;
+        padding: 20px 15px;
+        font-size: 15px;
+    }
+}
+
+.carousel-caption h1 {
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
 }

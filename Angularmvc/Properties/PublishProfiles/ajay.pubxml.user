@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\19264\Desktop\New folder\New folder2</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\19264\Desktop\New folder\New folder4</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Data/DataAngmvc.mdf">
@@ -16,7 +16,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/24/2017 12:32:43</publishTime>
     </File>
     <File Include="bin/Angularmvc.dll">
-      <publishTime>04/11/2017 18:33:47</publishTime>
+      <publishTime>04/20/2017 19:52:38</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>03/10/2017 12:13:01</publishTime>
@@ -130,7 +130,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 15:34:25</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>04/11/2017 18:13:13</publishTime>
+      <publishTime>04/19/2017 19:12:33</publishTime>
     </File>
     <File Include="Content/style.css">
       <publishTime>04/11/2017 11:49:21</publishTime>
@@ -334,10 +334,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/10/2017 19:23:51</publishTime>
     </File>
     <File Include="Views/Account/Create.cshtml">
-      <publishTime>03/15/2017 18:05:28</publishTime>
+      <publishTime>04/12/2017 18:03:29</publishTime>
+    </File>
+    <File Include="Views/Account/Delete.cshtml">
+      <publishTime>04/19/2017 15:48:39</publishTime>
     </File>
     <File Include="Views/Account/Display.cshtml">
-      <publishTime>04/11/2017 12:17:03</publishTime>
+      <publishTime>04/19/2017 15:00:25</publishTime>
     </File>
     <File Include="Views/Account/Events.cshtml">
       <publishTime>04/07/2017 14:48:24</publishTime>
@@ -358,7 +361,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2017 12:13:02</publishTime>
     </File>
     <File Include="Views/Account/NewsDetails.cshtml">
-      <publishTime>04/11/2017 17:59:22</publishTime>
+      <publishTime>04/19/2017 14:53:02</publishTime>
     </File>
     <File Include="Views/Account/Register.cshtml">
       <publishTime>04/11/2017 17:55:49</publishTime>
@@ -367,7 +370,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/17/2017 14:28:43</publishTime>
     </File>
     <File Include="Views/Account/tblAView.cshtml">
-      <publishTime>04/11/2017 16:06:30</publishTime>
+      <publishTime>04/20/2017 19:40:52</publishTime>
     </File>
     <File Include="Views/Account/_ChangePasswordPartial.cshtml">
       <publishTime>03/10/2017 12:13:02</publishTime>
@@ -382,13 +385,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2017 12:13:02</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>04/11/2017 17:55:30</publishTime>
+      <publishTime>04/20/2017 17:21:51</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>04/11/2017 18:33:01</publishTime>
+      <publishTime>04/12/2017 18:33:39</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>04/11/2017 11:30:59</publishTime>
+      <publishTime>04/20/2017 19:51:56</publishTime>
     </File>
     <File Include="Views/Home/Muzaffarpur.cshtml">
       <publishTime>04/11/2017 12:09:25</publishTime>
@@ -400,10 +403,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2017 12:13:02</publishTime>
     </File>
     <File Include="Views/Shared/_footer.cshtml">
-      <publishTime>04/11/2017 18:14:44</publishTime>
+      <publishTime>04/20/2017 19:44:35</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/11/2017 18:05:34</publishTime>
+      <publishTime>04/20/2017 19:42:52</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>03/24/2017 18:07:50</publishTime>

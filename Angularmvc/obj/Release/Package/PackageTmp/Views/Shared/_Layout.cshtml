@@ -43,7 +43,8 @@
                             <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Events" ? "active" : "")">@Html.ActionLink("Events", "Events", "Account")</li>
                             <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")">@Html.ActionLink("Contact", "Contact", "Home")</li>
                             <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "" ? "active" : "")">@Html.ActionLink("Yojana", "Yojana", "Home")</li>
-                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "" ? "active" : "")">@Html.ActionLink("निशाद कल्याण", "Index", "Home")</li>
+                            @*  <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "" ? "active" : "")">@Html.ActionLink("निशाद कल्याण", "Index", "Home")</li>*@
+                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "" ? "active" : "")"><a href="https://email19.godaddy.com/webmail.php"> Mail </a></li>
                         </ul>
                         @Html.Partial("_LoginPartial")
                     </div>
