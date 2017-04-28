@@ -95,6 +95,11 @@ namespace Angularmvc.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
+        public ActionResult AboutCaptJaiNarayan()
+        {
+            return View();
+        }
 
     }
 }

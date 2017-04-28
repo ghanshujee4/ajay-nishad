@@ -55,3 +55,7 @@ C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\Microsoft.Owin.Security.Mi
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\obj\Release\Angularmvc.dll
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\obj\Release\Angularmvc.pdb
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\obj\Release\Angularmvc.csprojResolveAssemblyReference.cache
+C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\PagedList.dll
+C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\PagedList.Mvc.dll
+C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\PagedList.xml
+C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\PagedList.Mvc.xml

@@ -13,7 +13,7 @@
         <div class="container">
 
             <div class="row">
-                @foreach (var item in Model)
+                @foreach (var item in Model.Take(2))
                 {
                     <div class="row">
                         <div>
@@ -53,6 +53,10 @@
                     <hr />
                 }
             </div>
+            @*Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+            @Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))*@
             <div style="margin:auto">
                 <ul class="pagination">
                     <li><a href="#">1</a></li>

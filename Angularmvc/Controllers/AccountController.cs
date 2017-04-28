@@ -13,6 +13,7 @@ using System.Web.Http.Results;
 using System.Data;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
+using PagedList;
 
 
 
@@ -525,6 +526,7 @@ namespace Angularmvc.Controllers
 
             //var fileview = db.tblAs.ToString();
             return View(db.tblAs.OrderByDescending(tblAs => tblAs.Datetime).Take(10).ToList());
+
         }
         //[AllowAnonymous]
         public ActionResult tblAView()
@@ -568,6 +570,20 @@ namespace Angularmvc.Controllers
             db.SaveChanges();
             return RedirectToAction("display");
         }
+        //protected void Page_Load(object sender, EventArgs e)
+        //{
+        //    btnDelete.Visible = false;
+        //    if (!IsPostBack)
+        //    {
+
+        //        if (Session["Username"] != null)
+        //            Logout.Visible = true;
+
+        //        else
+        //            Logout.Visible = false;
+        //    }
+        //}AboutCaptJaiNarayan
+       
 
     }
 }

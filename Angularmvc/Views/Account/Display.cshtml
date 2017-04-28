@@ -2,7 +2,11 @@
 @{
     ViewBag.Title = "News";
 }
-
+<meta property="og:url" content="http://www.ajaynishad.in/display" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Your Website Title" />
+<meta property="og:description" content="Your description" />
+<meta property="og:image" content="http://www.your-domain.com/path/image.jpg" />
 <div class="container">
     <h2 class="title2">News</h2>
     <hr />
@@ -13,7 +17,7 @@
         <div class="container">
 
             <div class="row">
-                @foreach (var item in Model)
+                @foreach (var item in Model.Take(2))
                 {
                     <div class="row">
                         <div>
@@ -42,6 +46,19 @@
                                         <a class="fa fa-twitter fa-2x" style="padding:10px"></a>
                                         <a class="fa fa-google fa-2x" style="padding:10px"></a>
                                     </div>
+                                   
+
+                                    <div id="fb-root"></div>
+                                    <script>
+                                        (function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (d.getElementById(id)) return;
+                                            js = d.createElement(s); js.id = id;
+                                            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }(document, 'script', 'facebook-jssdk'));</script>
+
+                                    <div class="fb-share-button" data-href="https://ajaynisha.in" data-layout="box_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fajaynisha.in%2F&amp;src=sdkpreparse">Share</a></div>
 
                                 </div>
                             </div>
@@ -53,6 +70,13 @@
                     <hr />
                 }
             </div>
+
+           
+
+            @*Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+                        @Html.PagedListPager(Model, page => Url.Action("Index",
+                new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))*@
             <div style="margin:auto">
                 <ul class="pagination">
                     <li><a href="#">1</a></li>

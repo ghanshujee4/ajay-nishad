@@ -17,6 +17,8 @@ C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\Microsoft.Owin.Security.Tw
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\Newtonsoft.Json.dll
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\Owin.dll
+C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\PagedList.dll
+C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\PagedList.Mvc.dll
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\System.Net.Http.Formatting.dll
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\System.Web.Helpers.dll
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\System.Web.Http.dll
@@ -28,6 +30,8 @@ C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\System.Web.WebPages.Deploy
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\System.Web.WebPages.dll
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\System.Web.WebPages.Razor.dll
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\WebGrease.dll
+C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\PagedList.xml
+C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\PagedList.Mvc.xml
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\System.Net.Http.Formatting.xml
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\System.Web.Http.xml
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\System.Web.Http.WebHost.xml
@@ -54,3 +58,4 @@ C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\Microsoft.Owin.Security.Tw
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\obj\Debug\Angularmvc.dll
 C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\obj\Debug\Angularmvc.pdb
+C:\Users\19264\Documents\cp\Angularmvc\Angularmvc\obj\Debug\Angularmvc.csprojResolveAssemblyReference.cache
