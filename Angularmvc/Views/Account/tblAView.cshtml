@@ -133,11 +133,11 @@
                 var file = files[i];
 
 
-                if ((/\.(png|jpeg|jpg|gif)$/i).test(file.name) && (file.size < 204800)) {
+                if ((/\.(png|jpeg|jpg|gif)$/i).test(file.name) && (file.size < 54800)) {
 
                     readImage(file);
                 } else {
-                    errors += file.name + " Unsupported Image extension\n Or File size exceeding 1/2 Mb ";
+                    errors += file.name + " Unsupported Image extension\n Or File size exceeding 150kb ";
                 }
             }
         }

@@ -229,6 +229,8 @@
     <Content Include="images\Ajay_images\276.jpg" />
     <Content Include="images\Ajay_images\4715_burned.png" />
     <Content Include="images\Ajay_images\4715_burned1.gif" />
+    <Content Include="images\Ajay_images\android-icon-36x36.png" />
+    <Content Include="images\Ajay_images\favicon.ico" />
     <Content Include="images\Ajay_images\lotus.png" />
     <Content Include="images\web\move-up.png" />
     <Content Include="images\web\overlay.png" />

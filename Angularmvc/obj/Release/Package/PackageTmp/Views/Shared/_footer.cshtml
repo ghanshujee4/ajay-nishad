@@ -72,9 +72,19 @@
         new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
     }
 </script>
+<script>
+    $(document).ready(function () {
+        var cssLink = document.createElement("link")
+        cssLink.href = "style.css";
+        cssLink.rel = "stylesheet";
+        cssLink.type = "text/css";
+        $('.goog-te-menu-frame').contents().find('head')[0].appendChild(cssLink)
+    })
+</script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <div id="fb_plugin_element">
     <div id="fb-root"></div>
+</div>
     <script>
 (function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -85,5 +95,5 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-    <div class="fb-page" data-href="https://www.facebook.com/NishadSri/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/NishadSri/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/NishadSri/">Ajay Nishad</a></blockquote></div>
+ <div class="fb-page" data-href="https://www.facebook.com/NishadSri/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/NishadSri/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/NishadSri/">Ajay Nishad</a></blockquote></div>
 

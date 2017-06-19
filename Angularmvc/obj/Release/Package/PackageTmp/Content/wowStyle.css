@@ -1,7 +1,7 @@
 ﻿
 /**Banner CSS***/
 
-.speechesIcons{text-align:center; font-family:'roboto_slabregular'; position:relative; z-index:9; margin-top:-70px; overflow:hidden; padding-top:10px;}
+.speechesIcons{text-align:center; font-family:'roboto_slabregular'; position:relative; z-index:99; margin-top:-55px; overflow:hidden; padding-top:10px;}
 .speechesIcons ul{list-style-type:none; margin:0 auto; display:table; padding:0px;}
 .speechesIcons ul li{display:inline-table; float:none; margin:0 0 10px 6px; transition:all 0.9s ease; -webkit-transition:all 0.9s ease;}
 .speechesIcons ul li:first-child{ margin-left:0px; }
